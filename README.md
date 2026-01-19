@@ -13,3 +13,48 @@ For the first objective (https://shoreshop3.netlify.app/about; ‘Data Rich’ u
 
 For the second objective (https://shoreshop3.netlify.app/about; ‘Sparse Data’ under Key Domains and Research Questions) addressing annual to century timescales and larger spatial scales, a second part of the dataset will be released in March, including longer-term (century-scale) hindcasts and shoreline data derived from historical sources, aimed at analyzing long-term coastal evolution on scales up to the whole NC coast. Additional datasets related to future wave projections under climate change scenarios, tropical cyclone projections, and more will also be included. More information about model submission requirements will be provided closer to the submission date.
 
+Notebooks
+The following notebooks are available in this repo:
+
+1. Wave Hindcast (1980-2023).ipynb: explore the input transect, shoreline and wave data.
+2. Water Levels (1980-2024).ipynb:
+3. Duck Beach Profiles.ipynb:
+4. CoastSat NC transects.ipynb:
+
+## Tasks
+
+Two main task will be attempted in this ShoreShop. Participants can decide which Task they want to address or both.
+
+### Task1.Data Rich - High Resolution Context: 
+- Task1.1. Predict the shoreline position at Duck Beach between 2021-01-01 and 2023-12-31 with daily timestep, for the four Profiles provided.
+- Task1.2. Predict the shoreline position at Northern Outer Banks between 2020-01-01 and 2023-12-31 with daily timestep, using Satellite Derived Data (SDD)
+- Task1.3. Century Hindcast.the shoreline position at Duck Beach between 1800 - 2025 with daily timestep, for the four Profiles provided.
+- Task1.4. Century Hindcast. the shoreline position at OB between 2023 - 2100 with daily timestep, for the four Profiles provided.
+- Task1.5. Forecast Prediction. the shoreline position at Duck Beach between 1800 - 2025 with daily timestep, for the four Profiles provided.
+
+### Task2.SPARSE DATA. Large Scale, Long-Term Change.
+- Task2.1. Predict the shoreline position at Duck Beach between 2021-01-01 and 2023-12-31 with daily timestep, for the four Profiles provided.
+
+### Evaluation
+Target transects: The target transects used for evaluation include Transects 2, 5 and 8 in the North end, the middle and the South end of the beach respectively.
+Target shorelines: For each target transect, the model prediction will be evaluated against the observed shoreline data at target datetimes. The target datetimes for short-term and medium-term tasks are in shorelines_target_short.csv and shorelines_target_medium.csv. For blind testing, the observed shoreline data in the target window will be withheld for all participants. The long-term prediction will not be evaluated, and the results are only for discussion.
+Evaluation metrics: Taylor diagram (consisting of centered root-mean-square error (CRMSE, bias excluded), Correlation and standard deviation (STD)) will be used to visualize and compare the model performance for each of the target transect.
+For quantitative comparison, root-mean-square error (RMSE, bias included), Correlation and STD are integrated into a single metrics. RMSE and STD of prediction are normalized by dividing them by the STD of the observation (target). This ensures that all three statistical parameters in the diagram are normalized. The loss function 
+L
+i
+ is then defined by intergrating the three parameters for each target transect. The average loss across all target transects 
+L
+avg
+ serves as the final metric for ranking the model performance. Please note that due to the difference between CRMSE and RMSE, the 
+L
+i
+ is indicative of, but not identical to, the distance between the model points and the target point (the black triangle) in the Taylor diagram.
+
+### Modeling rules
+Participants should not attempt to locate and retrieve extra shoreline information beyond that provided for Beach_X.
+Participants may use any type of model, including but not limited to hybrid and data-driven models.
+Participants must complete at least one task, although attempting both is encouraged.
+Participants must provide a brief description of the methodology used.
+Code submission is optional.
+Each participant can have multiple submissions.
+
