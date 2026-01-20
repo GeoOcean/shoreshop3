@@ -25,30 +25,18 @@ The following notebooks are available in this repo:
 
 Two main task will be attempted in this ShoreShop. Participants can decide which Task they want to address or both.
 
-### Task1.Data Rich - High Resolution Context: 
-- Task1.1. Predict the shoreline position at Duck Beach between 2021-01-01 and 2023-12-31 with daily timestep, for the four Profiles provided.
-- Task1.2. Predict the shoreline position at Northern Outer Banks between 2020-01-01 and 2023-12-31 with daily timestep, using Satellite Derived Data (SDD)
-- Task1.3. Century Hindcast.the shoreline position at Duck Beach between 1800 - 2025 with daily timestep, for the four Profiles provided.
-- Task1.4. Century Hindcast. the shoreline position at OB between 2023 - 2100 with daily timestep, for the four Profiles provided.
-- Task1.5. Forecast Prediction. the shoreline position at Duck Beach between 1800 - 2025 with daily timestep, for the four Profiles provided.
+### Objective1.Data Rich - High Resolution Context: 
+- Task1.1. (Mandatory)Predict the shoreline position at Duck Beach between 1980-01-01 and 2023-12-31 with daily timestep, for the four Profiles provided. 
+- Task1.2. (Optional)Predict the shoreline position at Northern Outer Banks (Hatteras - Virginia) between 2020-01-01 and 2023-12-31 with daily timestep, using Satellite Derived Data (SDD)
+- Potential tasks: Shoreline change of a subset of the Northern OBX.
+Evaluation:  Distribution of the variance. Spatial patterns of tehdistributions using  wavele
 
-### Task2.SPARSE DATA. Large Scale, Long-Term Change.
-- Task2.1. Predict the shoreline position at Duck Beach between 2021-01-01 and 2023-12-31 with daily timestep, for the four Profiles provided.
+### Objective2.SPARSE DATA. Large Scale, Long-Term Change.
+- Task2.1.(Optional)  Century Hindcast & Forecast.Predict the shoreline position at Duck Beach between 1870 to present for the four Profiles provided. 
+- Task2.2.(Optional)  Century Hindcast & Forecast.Entire North Carolina
+- Optional task: Subset change of a subset of the Northern OBX.
 
-### Evaluation
-Target transects: The target transects used for evaluation include Transects 2, 5 and 8 in the North end, the middle and the South end of the beach respectively.
-Target shorelines: For each target transect, the model prediction will be evaluated against the observed shoreline data at target datetimes. The target datetimes for short-term and medium-term tasks are in shorelines_target_short.csv and shorelines_target_medium.csv. For blind testing, the observed shoreline data in the target window will be withheld for all participants. The long-term prediction will not be evaluated, and the results are only for discussion.
-Evaluation metrics: Taylor diagram (consisting of centered root-mean-square error (CRMSE, bias excluded), Correlation and standard deviation (STD)) will be used to visualize and compare the model performance for each of the target transect.
-For quantitative comparison, root-mean-square error (RMSE, bias included), Correlation and STD are integrated into a single metrics. RMSE and STD of prediction are normalized by dividing them by the STD of the observation (target). This ensures that all three statistical parameters in the diagram are normalized. The loss function 
-L
-i
- is then defined by intergrating the three parameters for each target transect. The average loss across all target transects 
-L
-avg
- serves as the final metric for ranking the model performance. Please note that due to the difference between CRMSE and RMSE, the 
-L
-i
- is indicative of, but not identical to, the distance between the model points and the target point (the black triangle) in the Taylor diagram.
+  Evaluation:  Distribution of the variance over Spatial scales from annual to century(wavelet power spectra and EOF analysis). Forspatial extendedmodels, wewill use spatial distribution 
 
 ### Modeling rules
 Participants should not attempt to locate and retrieve extra shoreline information beyond that provided for Beach_X.
