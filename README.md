@@ -49,6 +49,40 @@ Participants must provide a brief description of the methodology used.
 Code submission is optional.
 Each participant can have multiple submissions.
 
-## Metrics for comparing model results to observations (and model results to each other)<img width="468" height="45" alt="image" src="https://github.com/user-attachments/assets/73a27094-4883-443c-b10b-cf7b9b6e0e97" />
+## Metrics for comparing model results to observations (and model results to each other)
+
+The main comparison approach, which will allow us to evaluate how much of the variance different models/process sets can explain at different timescales, will involve **wavelet analyses of shoreline-change time series**. 
+
+For profile-specific modeling, we will:
+
+-	Compare wavelet diagrams (plotting variance vs timescale on y axis and time on the x axis) using cross-wavelet coherence (e.g. Ruessink et al., 2006).
+-	In addition, average the variance at each timescale over the time series, to produce wavelet power spectra. 
+-	Then, compare observations and model results by calculating the correlation and RMSE between variance at each timescale for power spectra
+-	(As a secondary, deterministic approach, we will also calculate and compare Taylor Diagrams)
+
+For spatially extended modeling, we will:
+
+-	produce wavelet diagrams and power spectra for each alongshore location (500 m spacing)
+-	compare observations and model results for each alongshore location using the approaches above
+  
+-	In addition, to produce summary statistics, calculate:
+  o	The correlation and RMSE between the variance at each alongshore location, for each timescale, in model results and observations
+  o	The correlation and RMSE between the variance at each alongshore location, summed over timescales (resulting in a single lumped metric).
+
+### Timescales
+-	For Objective 1 (Data-rich context, daily to decadal timescales, Northern Outer Banks and/or Duck profiles), we will compare model results and observations (as described above) over the ‘blind’ period (honor system) of 2020 – 2025. 
+  o	The smallest timescale involved in the analyses will be limited by the return period of the observations (surveys for Duck, and CoastSat for spatially-extended): approximately two weeks. 
+  o	We will evaluate the variance at the following timescales (in days): 23, 46, 92, 184, 368, and 736
+  o	However, we will also compare model results with each other up to 2100, using the approaches above, evaluating variance at the following timescales (in years): 4, 8, 16, and 32. 
+-	For Objective 2 (Sparce Data, annual to century timescales, all of NC and/or Duck profiles; forcing data will be available in March), 
+  o	Hindcasts will extend back to 1870 (comparing models to observations)
+  o	Forecasts will extend to 2100 (comparing models to each other) 
+
+
+
+
+
+
+
 
 
