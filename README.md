@@ -13,13 +13,16 @@ For the first objective (https://shoreshop3.netlify.app/about; ‘Data Rich’ u
 
 For the second objective (https://shoreshop3.netlify.app/about; ‘Sparse Data’ under Key Domains and Research Questions) addressing annual to century timescales and larger spatial scales, a second part of the dataset will be released in March, including longer-term (century-scale) hindcasts and shoreline data derived from historical sources, aimed at analyzing long-term coastal evolution on scales up to the whole NC coast. Additional datasets related to future wave projections under climate change scenarios, tropical cyclone projections, and more will also be included. More information about model submission requirements will be provided closer to the submission date.
 
-Notebooks
+## Notebooks
 The following notebooks are available in this repo:
 
 1. Wave Hindcast (1980-2023).ipynb: explore the input transect, shoreline and wave data.
 2. Water Levels (1980-2024).ipynb:
 3. Duck Beach Profiles.ipynb:
 4. CoastSat NC transects.ipynb:
+
+## IMPORTANT:
+To use these Notebooks first the data should be downloaded and save in the right path as teh example.
 
 ## Tasks
 
