@@ -42,7 +42,7 @@ Evaluation:  Distribution of the variance. Spatial patterns of teh distributions
   Evaluation:  Distribution of the variance over Spatial scales from annual to century(wavelet power spectra and EOF analysis). For spatial extended models, we will use spatial distribution 
 
 ### Modeling rules
-Participants should not attempt to locate and retrieve extra shoreline information beyond that provided years
+Participants should not attempt to retrieve extra shoreline information beyond that provided years
 Participants may use any type of model, including but not limited to hybrid and data-driven models.
 Participants must complete at least one task, although attempting both is encouraged.
 Participants must provide a brief description of the methodology used.
