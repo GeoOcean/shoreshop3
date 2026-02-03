@@ -3,7 +3,7 @@
 The workshop and Model-Intercomparison Project (MIP) will address the processes causing shoreline and coastline change over a range of time and space scales, and examining how those processes interact in interesting ways. 
 This repository contains basic Jupyter Notebooks to use the datasets provided for the ShoreShop 3.0. However and due to the nature of this ShoreShop, the data can be download through the webpage https://shoreshop3.netlify.app/data. 
 
-![Hindcast domain map](hindcast_1980_2023/assets/hindcast_domain.png)
+![Hindcast domain map](hindcast_1980_2023/assets/hindcast_validation.png)
 
 ## Brackground and Objectives
 
