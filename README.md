@@ -70,14 +70,6 @@ For spatially extended modeling, we will:
 - (As a secondary approach, in addition to Taylor Diagrams, we will compare EOF/PCA analyses between observations and model results)
 
 ### Timescales
--	For Objective 1 (Data-rich context, daily to decadal timescales, Northern Outer Banks and/or Duck profiles), we will compare model results and observations (as described above) over the ‘blind’ period (honor system) of 2020 – 2025. 
-  -	The smallest timescale involved in the analyses will be limited by the return period of the observations (surveys for Duck, and CoastSat for spatially-extended): approximately two weeks. 
-  -	We will evaluate the variance at the following timescales (in days): 23, 46, 92, 184, 368, and 736
-  -	However, we will also compare model results with each other up to 2100, using the approaches above, evaluating variance at the following timescales (in years): 4, 8, 16, and 32. 
--	For Objective 2 (Sparce Data, annual to century timescales, all of NC and/or Duck profiles; forcing data will be available in March), 
-  -	Hindcasts will extend back to 1870 (comparing models to observations)
-  -	Forecasts will extend to 2100 (comparing models to each other) 
-
 - For Objective 1 (Data-rich context, daily to decadal timescales, Northern Outer Banks and/or Duck profiles), the calibration/test period will be 1984-2020 (forcing data provided now), and we will evaluate models during the period 2020-2060.
   - The model evaluation period will consist to two sub periods
     - compare model results and observations (as described above) over the 'blind' period (honor system) of 2020 - 2026.
